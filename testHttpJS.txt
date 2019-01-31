@@ -1,0 +1,58 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://blog.csdn.net/linzhiqiang0316/article/details/52326773"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+</head>
+<body>
+    
+
+
+<script type="text/javascript">
+
+
+var xmlHttp;  
+  
+function AjaxFunction(){  
+        createXMLHttpRequest();  
+        if(xmlHttp!=null){  
+    xmlHttp.onreadystatechange = callBack;  
+    xmlHttp.open("get/Post","URL",true/false);  
+    xmlHttp.send(null);  
+        }     
+}     
+  
+//???XMLHttpRequest??  
+function createXMLHttpRequest(){  
+        if(window.XMLHttpRequest){  
+    xmlHttp = new XMLHttpRequest();   
+        }else if(window.ActiveXObject){  
+    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");  
+        }  
+}  
+  
+//??????  
+function callBack(){  
+        if(xmlHttp.readyState==4){  
+                if(xmlHttp.status==200){  
+            //do something with xmlHttp.responseText;  
+            xmlHttp.responseText;  
+                }     
+        }  
+} 
+
+
+</script>
+
+</body>
+
+</html>
